@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Playfair Display', serief;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    line-height: 1.5;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    background-color: #606C38;
+}
+
+nav img {
+    margin-left: 40px;
+    height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+nav a {
+    color: White;
+    padding: 15px 25px;
+    border: 2px solid White;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: White;
+    transition: 0.5s;
+}
+
+header {
+    background-image: url(/images/overcooked2-background-image.jpg);
+    max-width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header a {
+    margin: 0px 20px;
+    color: white;
+    background-color: #25395A;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+
+header a:hover {
+    background-color: white;
+    color: #25395A;
+    transition: 0.5s;
+}
+
+.games {
+    text-align: center;
+
+    padding: 50px 0px 80px 0px;
+    border-bottom: 2px solid black;
+    background-color: #FEFAE0;
+}
+
+.games h2 {
+    margin-top: 0;
+    padding-top: 20px;
+
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: space-between;
+    max-width: fit-content;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h3 {
+    margin-bottom: 0px;
+}
+
+.card a {
+    padding: 10px 0px;
+    color: white;
+    background-color: #606C38;
+    border: 2px solid black;
+}
+
+.card a:hover {
+    color: black;
+    background-color: #FEFAE0;
+    transition: 0.5s;
+}
+
+.star-color {
+    font-size: 1.5rem;
+    margin: 0;
+    color: orange;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px black;
+    transition: 0.5s;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    background-color: #DDA15E;
+    padding: 50px 0px;
+    border-bottom: 2px solid black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+}
+
+.name-container,
+.woonplaats-geboortedatum-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.name-container div,
+.woonplaats-geboortedatum-container div,
+.email-container,
+.onderwerp-container,
+.bericht-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+input,
+select,
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+
+
+button {
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 48px;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+input:valid,
+textarea:valid,
+select:valid {
+    border: 2px solid green;
+}
+
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+    border: 2px solid red;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #283618;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side p {
+    color: white;
+}
+
+.left-side img {
+    width: 100px;
+}
+
+.left-side div {
+    display: flex;
+    gap: 20px;
+}
+
+.left-side div img {
+    width: 50px;
+}
+
+.right-side {
+    display: flex;
+    gap: 20px;
+}
+
+.right-side a {
+    color: white;
+}
+
+@media (max-width:480px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        margin-left: 0px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        text-align: center;
+    }
+
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .name-container,
+    .woonplaats-geboortedatum-container {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .right-side {
+        flex-direction: column;
+        align-items: center;
+    }
+}
