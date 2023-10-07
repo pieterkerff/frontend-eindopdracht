@@ -65,7 +65,7 @@ nav a:hover {
 }
 
 header {
-    background-image: URL("../images/overcooked2-background-image.jpg");
+    background-image: URL(../images/overcooked2-background-image.jpg);
     max-width: 100vw;
     height: 100vh;
     object-fit: cover;
